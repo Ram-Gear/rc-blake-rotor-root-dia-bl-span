@@ -35,11 +35,13 @@ input{border:none!important;background:#fff8c5!important;width:auto!important;ma
 td.o{background:#fff!important}
 .print-meta{display:block;margin-top:8px;padding-top:4px;border-top:1px solid #999;font-size:9px;color:#333;break-inside:avoid}
 }
+.card{border-top:5px solid #2E7386!important;border-radius:6px}
+div.card{display:inline-block;overflow:hidden;vertical-align:top}
 </style></head><body>
 <header><img src="icon.png" alt=""><div><h1>Rotor Root Diameters, Backlash & Span (Herringbone Pump Rotors)</h1><p>R.C. Blake Company program, converted from rotor-root-dia-bl-span.xls. Yellow cells are inputs; hover any result to see its original Excel formula.</p></div></header>
 <main>
 <div class="bar"><button id="reset">Reset to sheet values</button><button onclick="window.print()">Print</button><a class="btn" id="help-link" href="help.html" style="padding:5px 10px;border:1px solid #888;border-radius:3px;background:#fff;color:#111;text-decoration:none;font-size:13px">Help &amp; video</a><span class="hint">Results update as you type.</span></div>
-<table><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th></tr>
+<div class="card"><table><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th></tr>
 <tr><th>1</th><td></td><td></td><td></td><td></td><td></td><td></td><td class="b">CALCULATING ROOT DIAMETERS OF ROTOR (RDR), SET BL &amp; SPAN DIMS.</td><td></td><td></td><td></td><td></td></tr>
 <tr><th>4</th><td></td><td></td><td class="b">&nbsp; # B610197 LUBE OIL PUMP (WORTHINGTON)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><th>7</th><td></td><td></td><td class="b">NR =</td><td class="b"><input data-a="D7" value="10" title="D7"></td><td></td><td class="b">PAN =</td><td class="o" data-o="G7" data-fmt="0.00000" title="G7: =ATAN(D69*D66)*57.29577951"></td><td></td><td></td><td class="b">M A X</td><td class="b">M I N</td></tr>
@@ -90,8 +92,8 @@ td.o{background:#fff!important}
 <tr><th>82</th><td></td><td></td><td class="b">1924 KENSINGTON DRIVE</td><td></td><td></td><td></td><td class="b">CHAPTER5, PAGES 78 - 84 &amp; CUSTOM GEARS, VAN GERPIN, P. 8-2</td><td></td><td></td><td></td><td></td></tr>
 <tr><th>83</th><td></td><td></td><td class="b">FORT WORTH, TX 76110-6615</td><td></td><td></td><td></td><td>REVISED: 18NOV11</td><td></td><td></td><td></td><td></td></tr>
 <tr><th>84</th><td></td><td></td><td class="b">PHO: 817-923-1228&nbsp;  FAX: 817-923-1328</td><td></td><td></td><td></td><td>25 AUG 10</td><td></td><td></td><td></td><td></td></tr>
-<tr><th>85</th><td></td><td></td><td class="b">E-MAIL: rogercblake@att.net</td><td></td><td></td><td></td><td></td><td></td><td class="b">PROGRAM:</td><td class="b">ROTOR ROOT DIAMETERS</td><td></td></tr></table>
-<details><summary>Hidden working calculations (rows 58–79 were hidden in the original sheet)</summary>
+<tr><th>85</th><td></td><td></td><td class="b">E-MAIL: rogercblake@att.net</td><td></td><td></td><td></td><td></td><td></td><td class="b">PROGRAM:</td><td class="b">ROTOR ROOT DIAMETERS</td><td></td></tr></table></div>
+<details class="card"><summary>Hidden working calculations (rows 58–79 were hidden in the original sheet)</summary>
 <table><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th></tr>
 <tr><th>65</th><td></td><td></td><td>A</td><td class="o" data-o="D65" data-fmt="0.0000000000" title="D65: =0.8/D9"></td><td></td><td>SINPAN</td><td class="o" data-o="G65" data-fmt="0.00000000" title="G65: =SIN(G7*0.017453293)"></td><td></td><td>INV PATE @ T.M. =</td><td class="o" data-o="J65" data-fmt="0.00000000" title="J65: =(D8*(J27+J34)-(3.141592654*F27))/((F27*(D8+D7)))"></td><td class="o" data-o="K65" data-fmt="General" title="K65: =(D8*(J27+J40)-(3.141592654*F27))/((F27*(D8+D7)))"></td></tr>
 <tr><th>66</th><td></td><td></td><td>COSHA</td><td class="o" data-o="D66" data-fmt="0.0000000000" title="D66: =COS(D11*0.017453293)"></td><td></td><td>SINPAT</td><td class="o" data-o="G66" data-fmt="0.00000000" title="G66: =SIN(D10*0.017453293)"></td><td></td><td></td><td class="o" data-o="J66" data-fmt="General" title="J66: =(3*J65)^0.33333333"></td><td class="o" data-o="K66" data-fmt="General" title="K66: =(3*K65)^0.33333333"></td></tr>
