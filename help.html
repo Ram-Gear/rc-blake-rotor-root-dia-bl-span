@@ -1,6 +1,24 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Help: Rotor Root Diameters, Backlash and Span | R.C. Blake</title><link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" href="icon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
-<style>body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f5f7;color:#111}header{display:flex;align-items:center;gap:12px;padding:10px 16px;background:linear-gradient(#2b3d47, #1d2b33);color:#fff;border-bottom:6px solid #2e7386}header img{width:46px;height:46px;border-radius:8px;display:block}header h1{font-size:18px;margin:0}main{max-width:960px;padding:12px 16px}a.btn{display:inline-block;padding:5px 10px;background:#fff;border:1px solid #888;border-radius:3px;color:#111;text-decoration:none}video{width:100%;max-width:960px;background:#000}table{border-collapse:collapse;background:#fff}th,td{border:1px solid #ddd;padding:4px 8px;text-align:left;vertical-align:top}li{margin:6px 0}</style></head><body>
+<style>body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f5f7;color:#111}header{display:flex;align-items:center;gap:12px;padding:10px 16px;background:linear-gradient(#2b3d47, #1d2b33);color:#fff;border-bottom:6px solid #2e7386}header img{width:46px;height:46px;border-radius:8px;display:block}header h1{font-size:18px;margin:0}main{max-width:960px;padding:12px 16px}a.btn{display:inline-block;padding:5px 10px;background:#fff;border:1px solid #888;border-radius:3px;color:#111;text-decoration:none}video{width:100%;max-width:960px;background:#000}table{border-collapse:collapse;background:#fff}th,td{border:1px solid #ddd;padding:4px 8px;text-align:left;vertical-align:top}li{margin:6px 0}
+.print-meta{display:none}
+@page{size:letter landscape;margin:0.4in}
+@media print{
+html,body{background:#fff!important;color:#000}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+header{background:#fff!important;color:#000!important;border-bottom:2px solid #2e7386!important;padding:0 0 6px!important}
+header p{color:#333}
+.bar,.btn,button,nav,a.btn,video,#help-link,details{display:none!important}
+main{padding:0!important;overflow:visible!important;max-width:none!important}
+table{width:100%;font-size:9px;page-break-inside:auto}
+td,th{white-space:normal!important;padding:1px 3px!important;height:auto!important}
+tr,.notice,table.card,li,#glossary table,ol{break-inside:avoid;page-break-inside:avoid}
+input{border:none!important;background:#fff8c5!important;width:auto!important;max-width:70px;font-size:9px!important;color:#000!important}
+td.o{background:#fff!important}
+.print-meta{display:block;margin-top:8px;padding-top:4px;border-top:1px solid #999;font-size:9px;color:#333;break-inside:avoid}
+}
+@media print{main{font-size:11px}h2{font-size:15px;margin:8px 0 4px}h3{font-size:13px;margin:6px 0 2px}p{margin:4px 0}li{margin:2px 0}table{font-size:10px!important;width:auto}}
+</style></head><body>
 <header><img src="icon.png" alt=""><h1>Help: Rotor Root Diameters, Backlash and Span</h1></header>
 <main><p><a class="btn" href="index.html">&larr; Back to the program</a></p>
 <section id="watch"><h2>Watch how it works</h2>
@@ -9,4 +27,4 @@
 <p class="notice" id="disclaimer" style="font-size:12px;color:#555;background:#fff;border:1px solid #ddd;border-left:4px solid #2e7386;padding:8px 12px;margin:16px 0">This tool is provided in good faith for general information only. No warranty is made as to its accuracy or completeness. Use at your own risk and verify any results before relying on them.</p>
 <section id="glossary"><h2>Inputs and terms</h2><table><tr><th>NR</th><td>Number of teeth on rotor</td></tr><tr><th>NC</th><td>Number of teeth on cutter</td></tr><tr><th>DPT</th><td>Transverse diametral pitch</td></tr><tr><th>PAT</th><td>Transverse pressure angle</td></tr><tr><th>HA</th><td>Helix angle</td></tr><tr><th>ODR</th><td>Outside diameter of rotor</td></tr><tr><th>CE</th><td>Engaging centers</td></tr><tr><th>CTTTR @ PDRE</th><td>Circular tooth thickness, transverse, rotor, at engaging pitch diameter (from the BL to CR program)</td></tr><tr><th>AC</th><td>Addendum of cutter (factor; inches = AC / DPT)</td></tr><tr><th>RDR</th><td>Root diameter of rotor</td></tr><tr><th>SET BL</th><td>Set backlash resulting from the tooth thickness</td></tr></table>
 <p>Yellow cells are inputs. Hover any result in the program to see the original Excel formula. Rows that were hidden in Roger Blake's sheet are under "Hidden working calculations".</p></section>
-</main></body></html>
+<div class="print-meta">Help: Rotor Root Diameters, Backlash and Span &middot; Printed <span class="print-date"></span> &middot; R.C. Blake Company program (Roger C. Blake, Fort Worth, TX), web version by Ram-Gear Manufacturing.</div></main><script>(function(){function d(){var s=new Date().toLocaleString('en-US',{year:'numeric',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});document.querySelectorAll('.print-date').forEach(function(e){e.textContent=s});}d();window.addEventListener('beforeprint',d);})();</script></body></html>

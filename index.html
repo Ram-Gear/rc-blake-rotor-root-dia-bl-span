@@ -17,7 +17,24 @@ td.err{color:#b00020}
 input{width:84px;font-family:Consolas,monospace;font-size:12px;background:#fffbe0;border:1px solid #c9b200;text-align:right}
 details{margin-top:14px} summary{cursor:pointer;font-weight:bold}
 .hint{font-size:12px;color:#555}
-@media print{.bar{display:none} details{display:block}}
+
+
+.print-meta{display:none}
+@page{size:letter landscape;margin:0.4in}
+@media print{
+html,body{background:#fff!important;color:#000}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+header{background:#fff!important;color:#000!important;border-bottom:2px solid #2e7386!important;padding:0 0 6px!important}
+header p{color:#333}
+.bar,.btn,button,nav,a.btn,video,#help-link,details{display:none!important}
+main{padding:0!important;overflow:visible!important;max-width:none!important}
+table{width:100%;font-size:9px;page-break-inside:auto}
+td,th{white-space:normal!important;padding:1px 3px!important;height:auto!important}
+tr,.notice,table.card,li,#glossary table,ol{break-inside:avoid;page-break-inside:avoid}
+input{border:none!important;background:#fff8c5!important;width:auto!important;max-width:70px;font-size:9px!important;color:#000!important}
+td.o{background:#fff!important}
+.print-meta{display:block;margin-top:8px;padding-top:4px;border-top:1px solid #999;font-size:9px;color:#333;break-inside:avoid}
+}
 </style></head><body>
 <header><img src="icon.png" alt=""><div><h1>Rotor Root Diameters, Backlash & Span (Herringbone Pump Rotors)</h1><p>R.C. Blake Company program, converted from rotor-root-dia-bl-span.xls. Yellow cells are inputs; hover any result to see its original Excel formula.</p></div></header>
 <main>
@@ -89,7 +106,7 @@ details{margin-top:14px} summary{cursor:pointer;font-weight:bold}
 <tr><th>75</th><td></td><td></td><td>US^2</td><td class="o" data-o="D75" data-fmt="0.000000000" title="D75: =D73^2"></td><td></td><td>&quot;X&quot; = OS-PS =</td><td class="o" data-o="G75" data-fmt="0.00000000" title="G75: =G73-G74"></td><td></td><td>COSPATE@TM</td><td class="o" data-o="J75" data-fmt="0.00000000" title="J75: =COS(J74*0.017453293)"></td><td class="o" data-o="K75" data-fmt="General" title="K75: =COS(K74*0.017453293)"></td></tr>
 <tr><th>76</th><td></td><td></td><td></td><td></td><td></td><td>RDG =</td><td></td><td></td><td>CE @ T.M. =</td><td class="o" data-o="J76" data-fmt="General" title="J76: =(F27+F40)/(2*K75)"></td><td class="o" data-o="K76" data-fmt="0.00000000" title="K76: =(F27+F34)/(2*J75)"></td></tr>
 <tr><th>77</th><td></td><td></td><td></td><td></td><td></td><td>&nbsp; &nbsp; &nbsp;  FROM: EQUATION 5-14, OS = </td><td class="o" data-o="G77" data-fmt="0.00000000" title="G77: =(K24^2-G69^2)^0.5"></td><td></td><td>RDR =</td><td></td><td class="o" data-o="K77" data-fmt="0.000000" title="K77: =2*(K24-(D23/2))"></td></tr></table></details>
-</main>
+<div class="print-meta">Rotor Root Diameters, Backlash & Span (Herringbone Pump Rotors) &middot; Printed <span class="print-date"></span> &middot; R.C. Blake Company program (Roger C. Blake, Fort Worth, TX), web version by Ram-Gear Manufacturing.</div></main><script>(function(){function d(){var s=new Date().toLocaleString('en-US',{year:'numeric',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});document.querySelectorAll('.print-date').forEach(function(e){e.textContent=s});}d();window.addEventListener('beforeprint',d);})();</script>
 <script src="engine.js"></script><script src="model.js"></script>
 <script>
 const E=makeEngine(SHEET,FNS);
